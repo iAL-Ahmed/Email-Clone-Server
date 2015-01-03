@@ -1,0 +1,9 @@
+{
+  "name": "node-test",
+  "version": "0.0.0",
+  "description": "testing node server",
+  "main": "index.js",
+  "dependencies": {
+      "express": "4.9.1"
+    }
+}
