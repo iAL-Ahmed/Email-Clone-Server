@@ -14,7 +14,22 @@ app.get('/', function(req, res){
 app.get('/api/emailList', function(req, res){
 	//call the functions for the database here
 	res.setHeader("Access-Control-Allow-Origin", "*");
-  	res.status(200).send([
+  	res.status(200).send(emailList);
+});
+
+app.get('/api/emails/:id', function(req, res){
+	res.setHeader("Access-Control-Allow-Origin", "*");
+
+	//call the functions for the database here
+  	res.status(200).send(req.param.id);
+});
+
+
+
+
+
+
+var emailList = [
 	  {
 	    "from": "TicketFactory",
 	    "date": 1400956671914,
@@ -39,15 +54,7 @@ app.get('/api/emailList', function(req, res){
 	    "subject": "New subscription",
 	    "id": 74838344
 	  }
-	]);
-});
-
-app.get('/api/emails', function(req, res){
-	//call the functions for the database here
-  res.send(JSON.stringify(sql));
-});
-
-
+	]
 app.listen(port, url);
 
 console.log("Node test server running on port 3000");
