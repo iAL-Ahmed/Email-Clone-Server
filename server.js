@@ -21,7 +21,7 @@ app.get('/api/emails', function(req, res){
 	res.setHeader("Access-Control-Allow-Origin", "*");
 
 	//call the functions for the database here
-  	res.status(200).send(req.param.id);
+  	res.status(200).send(tacos);
 });
 
 
