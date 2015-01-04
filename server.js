@@ -13,7 +13,7 @@ app.get('/', function(req, res){
 
 app.get('/api/emailList', function(req, res){
 	//call the functions for the database here
-  res.send([
+  ress.status(200).send([
 	  {
 	    "from": "TicketFactory",
 	    "date": 1400956671914,
