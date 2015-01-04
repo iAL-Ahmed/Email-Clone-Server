@@ -6,6 +6,10 @@ var app = express();
 var port = process.env.PORT || 3000;
 var url = process.env.URL || 'localhost';
 
+app.get('/', function(req, res){
+	//call the functions for the database here
+  res.send("derp");
+});
 
 app.get('/api/emailList', function(req, res){
 	//call the functions for the database here
