@@ -22,7 +22,7 @@ app.get('/api/emails', function(req, res){
 	var thing = JSON.stringify(req);
 	var test = {stuff: 'lol'};
 	//call the functions for the database here
-  	res.status(200).send("stuff" + test);
+  	res.end("stuff" + test);
 });
 
 
