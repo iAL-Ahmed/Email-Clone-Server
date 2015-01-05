@@ -18,11 +18,11 @@ app.get('/api/emailList', function(req, res){
 });
 
 app.get('/api/emails/:id', function(req, res){
-	// res.setHeader("Access-Control-Allow-Origin", "*");
+	res.setHeader("Access-Control-Allow-Origin", "*");
 	// var thing = req);
 	// var test = {stuff: 'lol'};
 	//call the functions for the database here
-  	res.send(200, 'striiiing');
+  	res.send(200, req.params);
 });
 
 
