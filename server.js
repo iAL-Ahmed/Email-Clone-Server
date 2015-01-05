@@ -20,16 +20,12 @@ app.use(function(req, res, next) {
 
 app.get('/api/emailList', function(req, res){
 	//call the functions for the database here
-	// res.setHeader("Access-Control-Allow-Origin", "*");
   	res.status(200).send(emailList);
 });
 
 app.get('/api/emails/:id', function(req, res){
-	// res.setHeader("Access-Control-Allow-Origin", "*");
-	// var thing = req);
-	// var test = {stuff: 'lol'};
 	//call the functions for the database here
-  	res.send(200, req.params);
+  	res.send(200, req.params.id);
 });
 
 
