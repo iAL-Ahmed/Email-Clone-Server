@@ -22,7 +22,7 @@ app.get('/api/emails/:id', function(req, res){
 	// var thing = req);
 	// var test = {stuff: 'lol'};
 	//call the functions for the database here
-  	res.send(200, req.params.id);
+  	res.send(200, 'striiiing');
 });
 
 
