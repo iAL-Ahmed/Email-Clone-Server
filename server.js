@@ -20,7 +20,7 @@ app.get('/api/emailList', function(req, res){
 app.get('/api/emails', function(req, res){
 	res.setHeader("Access-Control-Allow-Origin", "*");
 	var thing = JSON.stringify(req);
-	var test = {stuff: 'lol'};
+	var test = JSON.stringify({stuff: 'lol'});
 	//call the functions for the database here
   	res.status(200).send(test);
 });
